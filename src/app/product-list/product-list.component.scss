@@ -1,0 +1,27 @@
+.clearance {
+    background-color: rgba(22, 191, 22, 0.793);
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.stock {
+    background-color: rgba(215, 30, 30, 0.774);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+*{
+    color: black
+}
+
+.card {
+    box-shadow: 15px 15px 10px rgba(4, 4, 4, 0.411);
+}

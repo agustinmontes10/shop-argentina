@@ -1,1 +1,13 @@
-<p>shopping-cart works!</p>
+<div class="d-flex flex-column align-items-center">
+    <h3><i class="fa-solid fa-cart-shopping fs-1"></i></h3>
+    <hr/>
+      
+    <div class="d-flex" style="flex-wrap: wrap;">
+        <div class="w-50 h-50" *ngFor="let product of (products | async)">
+            <div class="m-2">
+                <app-cart-item [quantity]="product.quantity" [image]="product.image" ></app-cart-item>
+            </div>
+        </div>
+    </div>
+    
+</div>

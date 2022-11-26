@@ -1,0 +1,19 @@
+
+<div class="d-flex w-100" style="flex-wrap: wrap; overflow-y: scroll; max-height: 85vh;">
+    <div *ngFor="let product of products" class="m-4 w-25 card">
+        <div style="height:65%; position: relative;">
+            <div *ngIf="product.clearance==true" class="clearance">OFERTA</div>
+            <div *ngIf="product.stock==0" class="stock">SIN STOCK</div>
+            <img src={{product.image}} alt="" class="w-100 h-100">
+        </div>
+        <div class="h-25 p-2 d-flex flex-column align-items-center">
+            <h6>{{product.name}}</h6>
+            <div class="d-flex justify-content-around">
+                <p>${{product.price}}</p>
+            </div>
+            
+            <button class="btn btn-outline-secondary btn-sm" (click)="agregar(product)">Agregar<i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </div>
+</div>
+

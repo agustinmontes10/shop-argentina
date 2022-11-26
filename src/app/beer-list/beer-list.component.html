@@ -1,8 +1,0 @@
-<table>
-    <tr *ngFor="let beer of beers" [ngClass]="{ 'clearance' : beer.clearance }">
-       <td>{{beer.name}}</td>
-       <td>{{beer.type}}</td>
-       <td>{{beer.price | currency }}</td> 
-       <td><span *ngIf="beer.stock==0">Sin stock</span></td>
-    </tr>
-</table>
